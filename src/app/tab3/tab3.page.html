@@ -1,6 +1,20 @@
 
+  <ion-toolbar>
+    <ion-buttons slot="start" routerLink="/tabs/tab1">
+      <ion-button color="dark">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end" routerLink="/tabs/tab2">
+      <ion-button color="dark">
+        <ion-icon slot="icon-only" name="mail-open-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
 <ion-content>
-  <br>
+
   <ion-item lines="none">
     <ion-label>
       <h1><b>Fatoumata Diawara</b></h1>
@@ -11,13 +25,14 @@
     </ion-item>
   <ion-button class="text_button" shape="round" size="small">Envoyer un message</ion-button>
   <ion-button class="icon_button" shape="round" size="small" fill="outline" color="medium">
-    <ion-icon color="dark" slot="icon-only" name="contact"></ion-icon>
+    <ion-icon color="dark" slot="icon-only"  name="person-circle-outline"></ion-icon>
+<ion-icon color="dark" slot="icon-only" name="checkmark"></ion-icon>
 
-    <ion-icon color="dark" slot="icon-only" name="checkmark"></ion-icon>
-  </ion-button>
+    </ion-button>
 
   <ion-button class="icon_button" shape="round" size="small" fill="outline" color="medium">
-    <ion-icon color="dark" slot="icon-only" name="arrow-dropdown"></ion-icon>
+    <ion-icon color="dark" slot="icon-only" name="caret-down-outline"></ion-icon>
+
   </ion-button>
   <ion-item lines="none">
     <ion-label>
