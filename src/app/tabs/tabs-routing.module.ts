@@ -24,7 +24,10 @@ const routes: Routes = [
         loadChildren: () => import('../notification/notification.module').then(m => m.NotificationPageModule)
       },
 
-
+      {
+        path: 'message',
+        loadChildren: () => import('../message/message.module').then(m => m.MessagePageModule)
+      },
       {
         path: '',
         redirectTo: '/tabs/tab1',
