@@ -24,6 +24,7 @@ const routes: Routes = [
         loadChildren: () => import('../notification/notification.module').then(m => m.NotificationPageModule)
       },
 
+
       {
         path: '',
         redirectTo: '/tabs/tab1',
