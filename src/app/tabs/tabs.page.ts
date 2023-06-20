@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  constructor() { /* TODO document why this constructor is empty */ }
 
 }
