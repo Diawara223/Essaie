@@ -4,7 +4,12 @@
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">This is the menu content.</ion-content>
+  <ion-content class="ion-padding">
+    <ion-button>
+  Right Icon
+  <ion-icon slot="end" name="star"></ion-icon>
+</ion-button>
+  </ion-content>
 </ion-menu>
 <div class="ion-page" id="main-content">
   <ion-header>
@@ -22,152 +27,34 @@
       </ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content>
-    <div class="stories">
+ <ion-content [fullscreen]="true">
+  <ion-slides [options]="option" class="ion-margin-top">
 
-      <div class="story">
-        <div class="img-box">
-          <img src="../../assets/a2.png">
-        </div>
-        <p >Ngangala Ligbo</p>
-      </div>
-      <div class="story">
-        <div class="img-box">
-          <img src="../../assets/a1.png">
-        </div>
-        <p>Haouaou Traoré</p>
-      </div>
-      <div class="story">
-        <div class="img-box">
-          <img src="../../assets/a3.png">
-        </div>
-        <p>Sara Diarra</p>
-      </div>
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/fr.JPG">
 
-      <div class="story">
-        <div class="img-box">
-          <img src="../../assets/4.png">
-        </div>
-        <p>Gerard P. Venetougou</p>
-      </div>
-      <div class="story">
-        <div class="img-box">
-          <img src="../../assets/5.png">
-        </div>
-        <p>Senabou Diallo</p>
-      </div>
-      <div class="story">
-        <div class="img-box">
-          <img src="../../assets/f.png">
-        </div>
-        <p>Fatoumata Diawara</p>
-      </div>
-    </div>
-    <hr>
-  <ion-card>
-    <ion-item no-padding lines="none">
-      <ion-avatar slot="start">
-        <img src="../../assets/a2.png">
-      </ion-avatar>
-      <ion-label>Ngangala Ligbo</ion-label>
-    </ion-item>
+      </ion-card>
+    </ion-slide>
 
-    <img class="post_img" src="../../assets/2.jpg">
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/ser.jpg">
 
-    <div class="flex-button">
+      </ion-card>
+    </ion-slide>
 
-        <ion-icon name="heart-outline"></ion-icon>
-        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-      <ion-icon name="bookmark-outline"></ion-icon>
-    </div>
-  </ion-card>
-  <ion-card>
-  <ion-item no-padding lines="none">
-    <ion-avatar slot="start">
-      <img src="../../assets/a1.png">
-    </ion-avatar>
-    <ion-label>Haouaou Traoré</ion-label>
-  </ion-item>
+    <ion-slide>
+      <ion-card>
+        <img src="../../assets/5.jpg">
 
-  <img class="post_img" src="../../assets/1.jpg">
+      </ion-card>
+    </ion-slide>
 
-  <div class="flex-button">
+  </ion-slides>
 
-      <ion-icon name="heart-outline">2</ion-icon>
-      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-    <ion-icon name="bookmark-outline"></ion-icon>
-  </div>
-  </ion-card>
-  <ion-card>
-  <ion-item no-padding lines="none">
-    <ion-avatar slot="start">
-      <img src="../../assets/a3.png">
-    </ion-avatar>
-    <ion-label>Sara Diarra</ion-label>
-  </ion-item>
 
-  <img class="post_img" src="../../assets/3.jpg">
-
-  <div class="flex-button">
-
-      <ion-icon name="heart-outline">2</ion-icon>
-      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-    <ion-icon name="bookmark-outline"></ion-icon>
-  </div>
-  </ion-card>
-  <ion-card>
-
-  <ion-item no-padding lines="none">
-    <ion-avatar slot="start">
-      <img src="../../assets/4.png">
-    </ion-avatar>
-    <ion-label>Gerard P. Venetougou</ion-label>
-  </ion-item>
-
-  <img class="post_img" src="../../assets/for.png">
-
-  <div class="flex-button">
-
-      <ion-icon name="heart-outline"></ion-icon>
-      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-    <ion-icon name="bookmark-outline"></ion-icon>
-  </div>
-  </ion-card>
-  <ion-card>
-  <ion-item no-padding lines="none">
-    <ion-avatar slot="start">
-      <img src="../../assets/5.png">
-    </ion-avatar>
-    <ion-label>Senabou Diallo</ion-label>
-  </ion-item>
-
-  <img class="post_img" src="../../assets/5.jpg">
-
-  <div class="flex-button">
-
-      <ion-icon name="heart-outline"></ion-icon>
-      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-    <ion-icon name="bookmark-outline"></ion-icon>
-  </div>
-  </ion-card>
-  <ion-card>
-    <ion-item no-padding lines="none">
-      <ion-avatar slot="start">
-        <img src="../../assets/f.png">
-      </ion-avatar>
-      <ion-label>Fatoumata Diawara</ion-label>
-    </ion-item>
-
-    <img class="post_img" src="../../assets/forma.jpg">
-
-    <div class="flex-button">
-
-        <ion-icon name="heart-outline"></ion-icon>
-        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-      <ion-icon name="bookmark-outline"></ion-icon>
-    </div>
-    </ion-card>
-  </ion-content>
+</ion-content>
 
 
 

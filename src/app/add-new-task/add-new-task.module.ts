@@ -4,18 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { NotificationPageRoutingModule } from './notification-routing.module';
+import { AddNewTaskPageRoutingModule } from './add-new-task-routing.module';
 
-import { NotificationPage } from './notification.page';
+import { AddNewTaskPage } from './add-new-task.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    NotificationPageRoutingModule,
-
+    AddNewTaskPageRoutingModule
   ],
-  declarations: [NotificationPage]
+  declarations: [AddNewTaskPage]
 })
-export class NotificationPageModule {}
+export class AddNewTaskPageModule {}

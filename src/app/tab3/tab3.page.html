@@ -1,17 +1,34 @@
 
-  <ion-toolbar>
-    <ion-buttons slot="start" routerLink="/tabs/tab1">
-      <ion-button color="dark">
-        <ion-icon name="chevron-back-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
 
-    <ion-buttons slot="end" routerLink="/tabs/tab2">
-      <ion-button color="dark">
-        <ion-icon slot="icon-only" name="mail-open-outline"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
+    <ion-content>
+    <ion-grid>
+
+    <ion-row>
+    <ion-col>
+    <ion-item>
+    <ion-label position="floating">Titre</ion-label>
+    <ion-input type="text" [(ngModel)]="newItem.title"></ion-input>
+    </ion-item>
+    </ion-col>
+    </ion-row>
+
+    <ion-row>
+    <ion-col>
+    <ion-item>
+    <ion-label position="floating">Description</ion-label>
+    <ion-input type="text" [(ngModel)]="newItem.description"> </ion-input>
+    </ion-item>
+    </ion-col>
+    </ion-row>
+
+
+
+    </ion-grid>
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button>
+    <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+    </ion-fab>
 
 <ion-content>
 

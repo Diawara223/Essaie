@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import  {PhotosService,Item} from'../services/photos.service';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -7,7 +7,24 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor() {
+    // TODO document why this constructor is empty
+
+
+  }
+  option = {
+    slidesPerView: 1.5,
+    centeredSlides: true,
+    loop: true,
+    spaceBetween: 10,
+    // autoplay:true,
+  }
+  items: Item[] = [];
+  constructor(
+,
+  ){
+  this.items = this.photoService.getItems();
+  }
 
 }
 
